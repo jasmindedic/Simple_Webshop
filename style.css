@@ -5,8 +5,133 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background: #EEE8C5;
 }
 
+/* Styling for header */
+.header {
+    background-image: url("./images/leaf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 2rem;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Styling for products */
+.products-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+
+.product {
+    width: 16rem;
+    height: 22rem;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-desc {
+    text-align: center;
+}
+
+.price-container {
+    text-align: center;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.buy-btn-container {
+    position: relative;
+    background-color: black;
+    width: 4.4rem;
+    height: 2.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.buy-btn {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.buy-btn:hover {
+    background: #EEE8C5;
+    color: black;
+}
+
+.amount {
+    z-index: 2;
+    color: black;
+    position: absolute;
+    top: -20px;
+    right: -5px;
+}
+
+.product-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.increase-decrease {
+    display: flex;
+    gap: 1rem;
+}
+
+.fa-plus, .fa-minus {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-plus:hover, .fa-minus:hover {
+    transform: scale(1.08);
+}
+
+/* Media queries */
+@media (max-width: 1500px) {
+    .products-container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+
+/* Webkit to hide scrollbar */
+::-webkit-scrollbar {
+    display: none;
+  }

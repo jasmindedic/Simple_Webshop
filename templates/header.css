@@ -108,7 +108,19 @@
     .nav-links li {
         width: 100%;
     }
+
+    .header {
+        margin-top: 4rem !important;
+        text-align: center;
+    }
+
+    .header h1 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
+
+
 
 @media (max-width: 450px) {
     .logo {
