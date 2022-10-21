@@ -11,3 +11,5 @@ Used technologies:
 - JavaScript
 - JSON
 - Localstorage
+
+I created the design (Mockup) with Figma myself : https://www.figma.com/file/CMMWgKZldvT9p1xbIW551Y/Webshop?node-id=0%3A1
