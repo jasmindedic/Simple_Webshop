@@ -122,6 +122,14 @@ body {
     transform: scale(1.08);
 }
 
+/* Footer */
+.footer {
+    background-image: url("./images/leaf.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* Media queries */
 @media (max-width: 1500px) {
     .products-container {

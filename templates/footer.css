@@ -1,0 +1,38 @@
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-links li {
+    list-style-type: none;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.6rem;
+    position: relative;
+}
+
+.social-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 0%;
+    border-radius: 0.4rem;
+    height: 6px;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.social-links li a:hover::after {
+    width: 100%;
+}

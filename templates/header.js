@@ -22,7 +22,7 @@ function createNavbar() {
         <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        <li><a class="nav-basket" href="#"><i class="fa-solid fa-basket-shopping"></i><span id="total">0</span></a></li>
     </ul>
     `;
 }
