@@ -1,10 +1,13 @@
 // Get elements
 let productContainer = document.querySelector(".products-container");
 
+// Array to store products in basket
+let basketProducts = [];
 
 // init function
 function init() {
     generateNavbar();
+    generateFooter();
     render();
 }
 
@@ -35,7 +38,7 @@ function createProducts(product) {
     </div>
     <div class="product-buttons">
         <div class="buy-btn-container">
-            <button type="button" class="buy-btn">Buy</button>
+            <button onclick="addProduct()" type="button" class="buy-btn">Buy</button>
             <span class="amount">0</span>
         </div>
         <div class="increase-decrease">
@@ -45,4 +48,8 @@ function createProducts(product) {
     </div>
 </div>
     `;
+}
+
+function addProduct() {
+
 }

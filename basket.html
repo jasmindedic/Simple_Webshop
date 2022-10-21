@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webshop</title>
+    <title>Basket</title>
     <!-- Font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google fonts link -->
     <link rel="stylesheet" href="./fonts/fonts.css">
-    <!-- Css header link -->
-    <link rel="stylesheet" href="./templates/header.css">
-    <!-- Css footer link -->
-    <link rel="stylesheet" href="./templates/footer.css">
     <!-- Css General link -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./basket.css">
 </head>
-<body onload="init()">
-        <!-- Navigation bar -->
-        <nav class="nav"></nav>
-        <!-- Header -->
+<body>
         <header class="header">
-            <h1>The best Products in the whole city!</h1>
+            <a href="./index.html"><img class="logo" src="./images/logo.png">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
         </header>
-        <!-- Content -->
-        <section class="products-container"></section>
-        <!-- Footer -->
-        <footer id="contact" class="footer"></footer>
+        <div class="headline">
+            <h1>Your Basket</h1>
+        </div>
+        <section class="baskte-content">
+
+        </section>
     <!-- JavaScript link -->
     <script src="./script.js"></script>
-    <script src="./templates/header.js"></script>
-    <script src="./templates/footer.js"></script>
     <script src="./data.js"></script>
 </body>
 </html>

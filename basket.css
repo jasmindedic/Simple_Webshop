@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #EEE8C5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 7rem;
+    padding-top: 0.6rem;
+}
+
+.header ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.header ul li {
+    list-style-type: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+/* Nav links animation */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 8px;
+    left: 0px;
+    bottom: -6px;
+    border-radius: 0.4rem;
+    background-color: black;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.headline {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 2rem;
+    background-image: url("./images/leaf.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+
+/* Media queries */
+@media (max-width: 1500px) {
+    .header {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
